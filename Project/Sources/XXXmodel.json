@@ -1,0 +1,39 @@
+{
+	"dataClasses":
+	{
+		"people":
+		{
+			"attributes": 
+			{
+				"fullname":
+				{
+					"kind": "calculated",
+					"type": "string"
+				},
+				"fullAddress":
+				{
+					"kind": "calculated",
+					"type": "object"
+				},
+				"birthdayShort":
+				{
+					"kind": "calculated",
+					"type": "string"
+				},
+				"age":
+				{
+					"kind": "calculated",
+					"type": "number"
+				},
+				"aged":
+				{
+					"kind": "calculated",
+					"type": "number"
+				}
+			}
+		}
+	}
+}
+
+
+

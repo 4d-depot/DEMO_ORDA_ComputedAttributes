@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Genealogy_v19" uuid="D74D1CFE96F4487287F1EE2C45535553" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="people" uuid="B2EE8676BD5348C1996D747A4F908EC5" id="1">
+		<field name="ID" uuid="F0269E704B0B4D1DA6523D08F53E0995" type="4" unique="true" autosequence="true" not_null="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="lastname" uuid="30241093FD3E4030B00198C252FC1CAA" type="10" limiting_length="255" id="2">
+			<field_extra position="2" multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="firstname" uuid="495D5684674E408C9D143B8C4E0E678F" type="10" limiting_length="255" id="3">
+			<field_extra position="3" multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="gender" uuid="AE20440166B549EFBE9255082B6795A2" type="1" id="4">
+			<field_extra position="4"/>
+		</field>
+		<field name="fatherID" uuid="716389502695442C929D109155B7CDB3" type="4" id="5">
+			<field_extra position="5" multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="motherID" uuid="EBFBCFC076174472B3ED997087C89B15" type="4" id="6">
+			<field_extra position="6" multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="birthday" uuid="F344B61ED8D84DB2BA30681B77D1C67A" type="8" id="7">
+			<field_extra position="7"/>
+		</field>
+		<field name="partnerID" uuid="5CDA1003057743C591287C3145CEBA08" type="4" id="8">
+			<field_extra multi_line="false" position="9">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="portrait_0" uuid="2C9F681CC02A4B56B75170DB1E0654B9" type="12" id="9">
+			<field_extra position="10"/>
+		</field>
+		<field name="portrait_1" uuid="42BF9DE89E78449182A2263E44DD286F" type="12" id="10">
+			<field_extra position="11"/>
+		</field>
+		<field name="portrait_2" uuid="3C0F6DAD63984715BBCEBAE701B0CD2D" type="12" id="11">
+			<field_extra position="12"/>
+		</field>
+		<field name="portrait_3" uuid="8FC925480AF24E14A0C9B1DDC844322B" type="12" id="12">
+			<field_extra position="13"/>
+		</field>
+		<field name="address" uuid="20F832D391B443FE81FCE0330CECC507" type="10" id="13">
+			<field_extra position="14"/>
+		</field>
+		<field name="zipCode" uuid="13070DBAA42F4F5794FFBBC8CA974564" type="10" limiting_length="255" id="14">
+			<field_extra position="15"/>
+		</field>
+		<field name="city" uuid="1FE8A61F41CE410D887C82288F6BC4B4" type="10" limiting_length="255" id="15">
+			<field_extra position="16"/>
+		</field>
+		<field name="state" uuid="52A838F40ECE41339E2CE4C8563BE07D" type="10" limiting_length="255" id="16">
+			<field_extra position="17"/>
+		</field>
+		<field name="country" uuid="1F05A457BD7A495D94A1666B1F1B400B" type="10" limiting_length="255" id="17">
+			<field_extra position="18"/>
+		</field>
+		<field name="phone" uuid="A1E562E5E6D84CF3AA46C44524F6FF9B" type="10" limiting_length="255" id="18">
+			<field_extra position="19"/>
+		</field>
+		<field name="company" uuid="FB55B9B7CF7144E380C01F74705BFF01" type="10" limiting_length="255" id="19">
+			<field_extra position="20"/>
+		</field>
+		<field name="email" uuid="A95F8514C9EA487A9E24D606712B1859" type="10" limiting_length="255" id="20">
+			<field_extra position="21"/>
+		</field>
+		<field name="cellPhone" uuid="907364962CAE4D22AE59EEB12AA1E52C" type="10" limiting_length="255" id="21">
+			<field_extra position="22"/>
+		</field>
+		<field name="deathday" uuid="0D76D78638844908A74E5E2861EB34CB" type="8" id="22">
+			<field_extra position="8" multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<primary_key field_name="ID" field_uuid="F0269E704B0B4D1DA6523D08F53E0995"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="22">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="83.50390625" top="1.05859375" width="183.26171875" height="503.3515625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(MEN)" uuid="DB7A1291307E4D54AA66A64E7BCB393E" id="2" hide_in_REST="true">
+		<field name="ID" uuid="D39A288DA08A478BA662B880E2033C34" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Name" uuid="427512391DA845DEBEE65BF920E261A8" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Firstname" uuid="6491856950A34F1396949AAB068A97F0" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="Father" uuid="5F3FC363071C42FBA35234FC6831AF95" type="4" never_null="true" id="4"/>
+		<field name="Mother" uuid="A4381E4D16114441A1A59BDD1346F3DB" type="4" never_null="true" id="5"/>
+		<primary_key field_name="ID" field_uuid="D39A288DA08A478BA662B880E2033C34"/>
+		<table_extra trashed="true" input_form="(Input)" output_form="(Output)">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="768.13671875" top="67.859375" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(WOMEN)" uuid="389879CCACD747E99460D249A379CF0D" id="3" hide_in_REST="true">
+		<field name="ID" uuid="59154BF11E6742F3AB46A099CEA5A4AC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Name" uuid="E4746B09B24F43979F15553C30BBC67E" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Firstname" uuid="E3F8FF0A4A1F46D389473A8D7DAAC197" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Father" uuid="3CC33276EF0A4C869CD5F61817109D81" type="4" never_null="true" id="4"/>
+		<field name="Mother" uuid="C1C14A071E0A460BAE8E35F519407362" type="4" never_null="true" id="5"/>
+		<primary_key field_name="ID" field_uuid="59154BF11E6742F3AB46A099CEA5A4AC"/>
+		<table_extra trashed="true" input_form="(Input)" output_form="(Output)">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="999.78125" top="73.8671875" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(FACES)" uuid="6D2C4CFB485A483784BEDEB5143C94DC" id="4" hide_in_REST="true">
+		<field name="ID" uuid="D5F66279C09841AC856E1252C1B71CAF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Portrait" uuid="70649B6487974B2EABFE00A4D4F754D1" type="12" never_null="true" id="2"/>
+		<field name="Gender" uuid="A720B352D1B94CF9AB3B9CB8A25D1A54" type="1" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="D5F66279C09841AC856E1252C1B71CAF"/>
+		<table_extra trashed="true" input_form="(Input)" output_form="(Output)">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="1098.3359375" top="11.09375" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(PORTRAITS)" uuid="299C2A25C7094DB48BA87862515A7118" id="5" hide_in_REST="true">
+		<field name="ID" uuid="62ED083567D94B2EB28F28D75367D874" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="pict" uuid="462860D6A9E841FFB2A2B71AC0094FFA" type="12" never_null="true" id="2"/>
+		<field name="index" uuid="CD7F453997FC4CA6BDE73ECF48E2CC9B" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="FullPath" uuid="C3281028F9524B9E857B7EBFCA32E5BC" type="10" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="62ED083567D94B2EB28F28D75367D874"/>
+		<table_extra input_form="Input" output_form="Output" trashed="true">
+			<editor_table_info displayable_fields_count="5">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="785.37109375" top="92.734375" width="323.57421875" height="162.6328125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="reports" uuid="17BC51C0200A42A889BFD380DE0D8663" id="6">
+		<field name="ID" uuid="85FE98131A7C40EB91F7887B71A43BFC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="7B5CA58EF1D645F0BF3777E4564946EC" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="doc" uuid="76B463FA3A324E8AA96E927A62DD0AA8" type="21" blob_switch_size="2147483647" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="85FE98131A7C40EB91F7887B71A43BFC"/>
+		<table_extra input_form="in" output_form="out">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="561.015625" top="70.95703125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="620C132FA2714FA69C0147A2A08EB4F4" name_Nto1="father" name_1toN="childrenAsFather" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="716389502695442C929D109155B7CDB3" name="fatherID">
+				<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="F0269E704B0B4D1DA6523D08F53E0995" name="ID">
+				<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="B956CED2987249DFACD60D4FF0A957A9" name_Nto1="mother" name_1toN="childrenAsMother" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="EBFBCFC076174472B3ED997087C89B15" name="motherID">
+				<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="F0269E704B0B4D1DA6523D08F53E0995" name="ID">
+				<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="02EEE8DE8973407EAB6A3B4F9DAD204D" name_Nto1="partner" name_1toN="marriedToBack" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="5CDA1003057743C591287C3145CEBA08" name="partnerID">
+				<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="F0269E704B0B4D1DA6523D08F53E0995" name="ID">
+				<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" uuid="1BB1D343F4E74DF786B630F1EFF03A91" type="7">
+		<field_ref uuid="716389502695442C929D109155B7CDB3" name="fatherID">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="207D58E02B8F421DB95E5A1E389325B7" type="7">
+		<field_ref uuid="CD7F453997FC4CA6BDE73ECF48E2CC9B" name="index">
+			<table_ref uuid="299C2A25C7094DB48BA87862515A7118" name="(PORTRAITS)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="firstnameLastname" uuid="28835C7ED6124399931029CAE074332F" type="1">
+		<field_ref uuid="495D5684674E408C9D143B8C4E0E678F" name="firstname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+		<field_ref uuid="30241093FD3E4030B00198C252FC1CAA" name="lastname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="3A0BD4C9AE4C4BCFA9E6F899D4A952F1" type="7">
+		<field_ref uuid="85FE98131A7C40EB91F7887B71A43BFC" name="ID">
+			<table_ref uuid="17BC51C0200A42A889BFD380DE0D8663" name="reports"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="lastnameFirstname" uuid="40917A504BD5405191D2CEBDD099615F" type="1">
+		<field_ref uuid="30241093FD3E4030B00198C252FC1CAA" name="lastname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+		<field_ref uuid="495D5684674E408C9D143B8C4E0E678F" name="firstname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="58C4D533E512430BADC03FA8DEB8B9E9" type="7">
+		<field_ref uuid="0D76D78638844908A74E5E2861EB34CB" name="deathday">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="74DD5D0BBCFE42D78DD4D370B93088F5" type="7">
+		<field_ref uuid="62ED083567D94B2EB28F28D75367D874" name="ID">
+			<table_ref uuid="299C2A25C7094DB48BA87862515A7118" name="(PORTRAITS)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="799991F73BED4B718660485F5D7B52FA" type="1">
+		<field_ref uuid="495D5684674E408C9D143B8C4E0E678F" name="firstname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="86F7F98E0C784B1E8C7340A139F931CB" type="7">
+		<field_ref uuid="5CDA1003057743C591287C3145CEBA08" name="partnerID">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="96BDCD0283174ECF943CA335EB14D5BB" type="7">
+		<field_ref uuid="D39A288DA08A478BA662B880E2033C34" name="ID">
+			<table_ref uuid="DB7A1291307E4D54AA66A64E7BCB393E" name="(MEN)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B12189B4E7AC470484AC25F104AEB000" type="7">
+		<field_ref uuid="59154BF11E6742F3AB46A099CEA5A4AC" name="ID">
+			<table_ref uuid="389879CCACD747E99460D249A379CF0D" name="(WOMEN)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B8463663E18F47E9B3F0C63B525E4D42" type="7">
+		<field_ref uuid="F0269E704B0B4D1DA6523D08F53E0995" name="ID">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="CE5FFE9BE84F4294B0517E72D98CA986" type="7">
+		<field_ref uuid="AE20440166B549EFBE9255082B6795A2" name="gender">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="D15A44FF890346069DE63B0B356CF368" type="7">
+		<field_ref uuid="F344B61ED8D84DB2BA30681B77D1C67A" name="birthday">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="DBE6656EB0374C60AAB7F6900C5DE7A2" type="7">
+		<field_ref uuid="EBFBCFC076174472B3ED997087C89B15" name="motherID">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="DE237B7BFF0040BABBBBC19024D69C8B" type="7">
+		<field_ref uuid="D5F66279C09841AC856E1252C1B71CAF" name="ID">
+			<table_ref uuid="6D2C4CFB485A483784BEDEB5143C94DC" name="(FACES)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="E36D7D0182F148038C0863CAFADF9827" type="1">
+		<field_ref uuid="30241093FD3E4030B00198C252FC1CAA" name="lastname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" package_name="Genealogy_3" structure_file_name="Genealogy" data_file_path=":Genealogy.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

@@ -1,0 +1,37 @@
+﻿{
+	"SelectPersons": {
+		"editable": true,
+		"items": [
+			{
+				"text": "Grand parents",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "Parents",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "Children",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "Siblings",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "Aunts and uncles",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Cousins",
+				"ref": 6,
+				"editable": true
+			}
+		]
+	}
+}

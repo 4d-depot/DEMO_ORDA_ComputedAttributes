@@ -1,0 +1,750 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 278,
+	"markerBreak": 278,
+	"markerFooter": 288,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 96,
+					"left": 554,
+					"width": 100,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 93,
+					"left": 24,
+					"width": 515,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"text": "people"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 77,
+					"left": 19,
+					"width": 644,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					],
+					"borderStyle": "solid"
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					],
+					"borderStyle": "solid"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					],
+					"borderStyle": "solid"
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					],
+					"borderStyle": "solid"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 126,
+					"left": 254,
+					"width": 75,
+					"height": 17,
+					"textAlign": "right",
+					"text": "ID : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 153,
+					"left": 254,
+					"width": 75,
+					"height": 17,
+					"textAlign": "right",
+					"text": "lastname : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 180,
+					"left": 254,
+					"width": 75,
+					"height": 17,
+					"textAlign": "right",
+					"text": "firstname : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 207,
+					"left": 254,
+					"width": 75,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Gender : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 234,
+					"left": 254,
+					"width": 75,
+					"height": 17,
+					"textAlign": "right",
+					"text": "father : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 261,
+					"left": 254,
+					"width": 75,
+					"height": 17,
+					"textAlign": "right",
+					"text": "mother : "
+				},
+				"ID": {
+					"type": "input",
+					"top": 126,
+					"left": 334,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[people:1]ID:1",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"lastname": {
+					"type": "input",
+					"top": 153,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[people:1]lastname:2",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"firstname": {
+					"type": "input",
+					"top": 180,
+					"left": 334,
+					"width": 305,
+					"height": 17,
+					"dataSource": "[people:1]firstname:3",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Gender": {
+					"type": "checkbox",
+					"top": 207,
+					"left": 334,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[people:1]gender:4",
+					"text": "Yes",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"father": {
+					"type": "input",
+					"top": 234,
+					"left": 334,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[people:1]fatherID:5",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"mother": {
+					"type": "input",
+					"top": 261,
+					"left": 334,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[people:1]motherID:6",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"firstname1": {
+					"type": "input",
+					"top": 293,
+					"left": 18,
+					"width": 240,
+					"height": 240,
+					"dataSource": "[people:1]portrait_0:9",
+					"dataSourceTypeHint": "picture",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"pictureFormat": "truncatedTopLeft",
+					"dragging": "custom",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"firstname2": {
+					"type": "input",
+					"top": 293,
+					"left": 278,
+					"width": 240,
+					"height": 240,
+					"dataSource": "[people:1]portrait_1:10",
+					"dataSourceTypeHint": "picture",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"pictureFormat": "truncatedTopLeft",
+					"dragging": "custom",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"firstname3": {
+					"type": "input",
+					"top": 293,
+					"left": 538,
+					"width": 240,
+					"height": 240,
+					"dataSource": "[people:1]portrait_2:11",
+					"dataSourceTypeHint": "picture",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"pictureFormat": "truncatedTopLeft",
+					"dragging": "custom",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"firstname4": {
+					"type": "input",
+					"top": 293,
+					"left": 799,
+					"width": 240,
+					"height": 240,
+					"dataSource": "[people:1]portrait_3:12",
+					"dataSourceTypeHint": "picture",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"pictureFormat": "truncatedTopLeft",
+					"dragging": "custom",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 618,
+					"left": 875,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 618,
+					"left": 955,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de saisie": {
+					"type": "input",
+					"left": 26,
+					"top": 564,
+					"width": 219,
+					"height": 17,
+					"dataSource": "Form:C1466.pictSize_0"
+				},
+				"Zone de saisie1": {
+					"type": "input",
+					"left": 286,
+					"top": 564,
+					"width": 219,
+					"height": 17,
+					"dataSource": "Form:C1466.pictSize_1"
+				},
+				"Zone de saisie2": {
+					"type": "input",
+					"left": 546,
+					"top": 564,
+					"width": 219,
+					"height": 17,
+					"dataSource": "Form:C1466.pictSize_2"
+				},
+				"Zone de saisie3": {
+					"type": "input",
+					"left": 806,
+					"top": 564,
+					"width": 219,
+					"height": 17,
+					"dataSource": "Form:C1466.pictSize_3"
+				},
+				"label_birthday": {
+					"type": "text",
+					"text": "birthday:",
+					"top": 69,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_birthday": {
+					"type": "input",
+					"dataSource": "[people:1]birthday:7",
+					"top": 69,
+					"left": 1207,
+					"width": 250,
+					"height": 17
+				},
+				"label_address": {
+					"type": "text",
+					"text": "address:",
+					"top": 133,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_address": {
+					"type": "input",
+					"dataSource": "[people:1]address:13",
+					"top": 133,
+					"left": 1207,
+					"width": 250,
+					"height": 170
+				},
+				"label_zipCode": {
+					"type": "text",
+					"text": "zipCode:",
+					"top": 323,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_zipCode": {
+					"type": "input",
+					"dataSource": "[people:1]zipCode:14",
+					"top": 323,
+					"left": 1207,
+					"width": 250,
+					"height": 17
+				},
+				"label_city": {
+					"type": "text",
+					"text": "city:",
+					"top": 360,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_city": {
+					"type": "input",
+					"dataSource": "[people:1]city:15",
+					"top": 360,
+					"left": 1207,
+					"width": 250,
+					"height": 17
+				},
+				"label_state": {
+					"type": "text",
+					"text": "state:",
+					"top": 397,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_state": {
+					"type": "input",
+					"dataSource": "[people:1]state:16",
+					"top": 397,
+					"left": 1207,
+					"width": 250,
+					"height": 17
+				},
+				"label_country": {
+					"type": "text",
+					"text": "country:",
+					"top": 434,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_country": {
+					"type": "input",
+					"dataSource": "[people:1]country:17",
+					"top": 434,
+					"left": 1207,
+					"width": 250,
+					"height": 17
+				},
+				"label_phone": {
+					"type": "text",
+					"text": "phone:",
+					"top": 471,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_phone": {
+					"type": "input",
+					"dataSource": "[people:1]phone:18",
+					"top": 471,
+					"left": 1207,
+					"width": 250,
+					"height": 17
+				},
+				"label_company": {
+					"type": "text",
+					"text": "company:",
+					"top": 508,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_company": {
+					"type": "input",
+					"dataSource": "[people:1]company:19",
+					"top": 508,
+					"left": 1207,
+					"width": 250,
+					"height": 17
+				},
+				"label_email": {
+					"type": "text",
+					"text": "email:",
+					"top": 545,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_email": {
+					"type": "input",
+					"dataSource": "[people:1]email:20",
+					"top": 545,
+					"left": 1207,
+					"width": 250,
+					"height": 17
+				},
+				"label_cellPhone": {
+					"type": "text",
+					"text": "cellPhone:",
+					"top": 582,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_cellPhone": {
+					"type": "input",
+					"dataSource": "[people:1]cellPhone:21",
+					"top": 582,
+					"left": 1207,
+					"width": 250,
+					"height": 17
+				},
+				"label_deathday": {
+					"type": "text",
+					"text": "deathday:",
+					"top": 96,
+					"left": 1097,
+					"width": 100,
+					"height": 17
+				},
+				"field_deathday": {
+					"type": "input",
+					"dataSource": "[people:1]deathday:22",
+					"top": 96,
+					"left": 1207,
+					"width": 250,
+					"height": 17
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"vRecNum",
+					"Text9",
+					"Line10"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 202,
+	"method": "method.4dm"
+}
